@@ -1,6 +1,18 @@
 #LEARNING LOG
 
 ````
+2020-07-05
+
+- Issue in initializing 2D matrix in python 
+- Changing one value of cell, changes entire columns
+    >>> a = [[0]*3]*3
+    >>> a[1][1] = 3
+    >>> a
+    [[0, 3, 0], [0, 3, 0], [0, 3, 0]]
+- No use in writing tests for getter and setter
+- Google Meet has serious issues
+- Design before writing code
+
 2020-07-04
 
 - import class from a different directory
