@@ -1,6 +1,12 @@
 #LEARNING LOG
 
 ````
+2020-07-07
+
+- Test Cases name start with "test"
+- A class without instantiating objects are static class
+- How to make enums
+
 2020-07-05
 
 - Issue in initializing 2D matrix in python 
@@ -25,4 +31,5 @@ e.g switch [github_username] to switch between different github users
 
 - how to write unit test in python 
 https://www.youtube.com/watch?v=1Lfv5tUGsn8
+python3 -m unittest [filename].py
 ````
