@@ -1,8 +1,10 @@
-from game.point import Point
-from game.board import Board
-import unittest
 import sys
 sys.path.append('../')
+from game.point import Point
+from game.board import Board
+from game.status import Status
+import unittest
+
 
 
 class TestBoardClass(unittest.TestCase):
@@ -18,6 +20,5 @@ class TestBoardClass(unittest.TestCase):
         for i in range(len(sample_points)):
             actual_status = obj.board[sample_points[i].X(
             )][sample_points[i].Y()].get_state()
-            expected_status = True
+            expected_status = Status.ALIVE
             self.assertEqual(expected_status, actual_status)
-            

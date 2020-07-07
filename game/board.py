@@ -1,4 +1,5 @@
 from game.cell import Cell
+from game.status import Status
 
 class Board:
     
@@ -12,4 +13,4 @@ class Board:
             self.board.append(board_rows)
 
         for i in range(len(points)):
-            self.board[points[i].X()][points[i].Y()].set_state(True)
+            self.board[points[i].X()][points[i].Y()].set_state(Status.ALIVE)
