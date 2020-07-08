@@ -1,6 +1,12 @@
 #LEARNING LOG
 
 ````
+2020-07-08
+
+- How to automate trivial task using Makefile
+- [Vishva] Confusion about representation of matrix, (rows/column)
+- Abstraction of classes 
+
 2020-07-07
 
 - Test Cases name start with "test"
