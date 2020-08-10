@@ -2,6 +2,7 @@ from game.cell import Cell
 from game.status import Status
 from game.point import Point
 
+
 class Board:
     
     def __init__(self, n, m, points):
@@ -32,17 +33,16 @@ class Board:
             neighbour_cell_pos = Point(point.X() + direction_array_x[idx], point.Y() + direction_array_y[idx])
 
             if self.validate_point(neighbour_cell_pos):
-                if(self.get_status_of_cell_at_position(neighbour_cell_pos) == Status.ALIVE):
+                if self.get_status_of_cell_at_position(neighbour_cell_pos) == Status.ALIVE:
                     alive_neighbours += 1
         
         return alive_neighbours
     
     def validate_point(self, point):
-        if(point.X() >=0 and point.X() < self.rows):
-            if (point.Y() >=0 and point.Y() < self.columns):
+        if 0 <= point.X() < self.rows:
+            if 0 <= point.Y() < self.columns:
                 return True
             else:
                 return False
         else:
             return False
-        
