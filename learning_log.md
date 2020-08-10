@@ -1,6 +1,38 @@
 #LEARNING LOG
 
+
 ````
+
+2020-08-10
+
+Planning for next day
+
+1. Extension of board (old board)
+	-[T, L, D, B]
+
+	[T, L, B, D]
+
+	return list
+
+2. Arrangement (board)
+	Based on the list, we expand the board
+
+	D - row + 1
+	R - column + 1
+	L - column + 1, all column values will add up + 1
+	T - row + 1, all row values will add up + 1
+
+
+	return new board with rearranged.
+
+
+
+new generation(new board)
+	
+	return updated_new_board	
+
+print
+
 2020-07-08
 
 - How to automate trivial task using Makefile
